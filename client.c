@@ -2,7 +2,6 @@
 #include <fcntl.h>
 #include <semaphore.h>
 #include <sys/mman.h>
-#include <sys/stat.h>
 #include <unistd.h>
 
 #include "common.h"

@@ -2,7 +2,6 @@
 #include <fcntl.h>
 #include <semaphore.h>
 #include <sys/mman.h>
-#include <sys/stat.h>
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <unistd.h>
@@ -33,7 +32,7 @@ static void make_name(char *dst, int pid, const char *suffix) {
     char num[16];
     int n = 0;
     int p = 0;
-    const char *pre = "/lab4_";
+    const char *pre = "/lab3_";
 
     if (pid == 0) {
         num[n++] = '0';
